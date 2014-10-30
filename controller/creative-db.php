@@ -25,6 +25,12 @@ if($connection->connect_error) {
 	else {
 		echo "Database already exists.";
 	}
+    // created a table within a database
+	$query = $connection->query("CREAT TABLE posts ("
+		. "id int (1) NOT NULL AUTO_INCREMENT,"
+		. "title varchar235) NOT NULL,"
+	    . "post text NOT NULL,"
+	    . "PRIMARY KEY (id)");
         //closes conncection
 		$connection->close();
  ?>
