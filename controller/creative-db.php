@@ -8,7 +8,7 @@ $connection = new mysqli($host, $username, $password);
 
 // this if/else statement is used if there is a conncetion error 
 if($connection->connect_error) {
-    die("Error: " . $connection->connect_error);
+    die("<p>Error: " . $connection->connect_error . "</p>");
 	}
 	// this line of code shows that there is a connection with the database
 	$exists = $connection->select_db($database);
@@ -19,11 +19,11 @@ if($connection->connect_error) {
 
        // successfully creates database
        if($query){
-           echo "Successfully created database: " . $database;
+           echo "<p>Successfully created database: " . $database . "</p>";
        }
 	}
 	else {
-		echo "Database already exists.";
+		echo "<p>Database already exists.</p>";
 	}
     // created a table within a database
 	$query = $connection->query("CREATE TABLE posts ("
@@ -34,10 +34,10 @@ if($connection->connect_error) {
 	    . "PRIMARY KEY (id) )");
 //outputs the $query saying if it is true or false
 	if($query){
-         echo "Succesfully created table: posts";
+         echo "<p>Succesfully created table: posts</p>";
 		}
 		else {
-			echo "$connection->error";
+			echo "<p>$connection->error</p>";
 		}
 
         //closes conncection
