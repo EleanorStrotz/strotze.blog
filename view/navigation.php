@@ -1,7 +1,11 @@
-<!-- links you to post.php -->
+<?php 
+// looks for/links navigation.php config.php
+	require_once(__DIR__ . "/../model/config.php");
+?>
 <nav>
 	<ul>
-		<li><a href="../post.php">Blog Post Form</a></li>
+	<!-- links you to post.php -->
+		<li><a href="<?php echo $path . "post.php"?>">Blog Post Form</a></li>
 	</ul>
 
 </nav>
