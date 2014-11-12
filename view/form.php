@@ -1,6 +1,12 @@
+<?php
+//helps us reach certian files with minimal work
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
 <h1>Create Blog Post</h1>
 
-<form>
+<!-- sends information to the post and echos the path for the information to follow -->
+<form method="post" action"<?php echo $path . "controller/create-post.php"; ?>">
 <!-- div puts in the title and the label for the title -->
 	<div>
 		<label for="title">Title: </label>
