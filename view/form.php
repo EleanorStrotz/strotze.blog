@@ -6,7 +6,7 @@
 <h1>Create Blog Post</h1>
 
 <!-- sends information to the post and echos the path for the information to follow -->
-<form method="post" action"<?php echo $path . "controller/create-post.php"; ?>">
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 <!-- div puts in the title and the label for the title -->
 	<div>
 		<label for="title">Title: </label>
