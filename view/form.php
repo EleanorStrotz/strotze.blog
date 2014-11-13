@@ -19,6 +19,6 @@
 	</div>
 	<!-- div is to create the submit button -->
 	<div>
-		<button type="submit">Submit</button>
+		<button type="submit" class="btn btn-success">Submit</button>
 	</div>
 </form>
