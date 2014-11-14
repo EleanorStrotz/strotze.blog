@@ -22,3 +22,4 @@
 	// closes our connection
 	$connection->close();
 ?>
+<!-- 2:14 -->
