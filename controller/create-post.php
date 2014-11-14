@@ -1,6 +1,6 @@
 <?php
-// require once connects create-post with database.php
-	require_once(__DIR__ . "/../model/database.php");
+// require once connects create-post with config.php
+	require_once(__DIR__ . "/../model/config.php");
 // connection variable connects host, username, password, and database to create-post.php
 	$connection = new mysqli($host, $username, $password, $database);
 
