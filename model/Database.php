@@ -19,6 +19,18 @@ class Database {
 		$this->password = $password;
 		$this->database = $database;
 	}
+    // public function is used to open classes through an open connection
+	public function openConnection() {
+
+	}
+	// function closes the connection
+	public function closeConnection() {
+
+	}
+	// after you call the object you will be able to specifically call on the function above. Wont have to constantly repeat it. 
+	public function query($string) {
+
+	}
 }
 
 ?>
