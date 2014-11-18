@@ -29,8 +29,13 @@ class Database {
 	   }
 	}
 	// function closes the connection
+	// isset function checks if there is info present in the variable.
+	// isset checks if there is a connection.
+	// function is a block of statements that can be used repeatly in a program; will execute if called
 	public function closeConnection() {
-
+		if(isset($this->connection)) {
+			$this->connection->close();
+		}
 	}
 	// after you call the object you will be able to specifically call on the function above. Wont have to constantly repeat it. 
 	public function query($string) {
