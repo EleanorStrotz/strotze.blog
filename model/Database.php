@@ -21,7 +21,12 @@ class Database {
 	}
     // public function is used to open classes through an open connection
 	public function openConnection() {
-
+		// this variable establishes connection to the database class and the constuct function
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+		// this if/else statement is used if there is a conncetion error 
+        if($this->connection->connect_error) {
+           die("<p>Error: " . $this->connection->connect_error . "</p>");
+	   }
 	}
 	// function closes the connection
 	public function closeConnection() {
