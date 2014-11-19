@@ -2,11 +2,15 @@ body{
 	/*addes background image*/
 	background-image: url(https://ununsplash.imgix.net/photo-1415226194219-638f50c5d25f?q=75&fm=jpg&s=f6023ef5a263558b47f4bacc775bfc88);
 }
-/*media makes the website mobile responsive*/
-@media (min-width: 320px) and (max-width: 480px) {
+/*media query/ mobile responsive line of code for iphone 5*/
+@media (min-device-width: 320px) and (max-device-width: 480px){
 	body{
-		width:100%;
-		background-color: lime;
-		text-align: center; 
+		background-color: blue;
+	}
+}
+/* media query/ mobile responsive line of code for ipad*/
+@media (min-device-width: 768px) and (max-device-width: 1024px){
+	body{
+		background-color: yellow;
 	}
 }
