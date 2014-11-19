@@ -39,6 +39,17 @@ class Database {
 	}
 	// after you call the object you will be able to specifically call on the function above. Wont have to constantly repeat it. 
 	public function query($string) {
+		// calls on the openConnection function at line 23, executes all the line of code below it
+		this->openConnection();
+
+		// querys the connection you have above
+		//executes query in database
+		$query = this->connection->query($string);
+
+		//closes connection
+		$this->closeConnection();
+		// returns the query variable if it is true or false
+		return $query;
 
 	}
 }
