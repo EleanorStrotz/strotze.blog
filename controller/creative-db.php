@@ -2,9 +2,8 @@
 
 //Looks for config.php 
  require_once(__DIR__ . "/../model/config.php");
-
 // connects our host, username, and password to mysqli
-$connection = new mysqli($host, $username, $password);
+$connection = mysqli($host, $username, $password);
 
 // this if/else statement is used if there is a conncetion error 
 if($connection->connect_error) {

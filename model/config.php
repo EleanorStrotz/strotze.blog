@@ -11,7 +11,7 @@ $path = "/strotze.blog/";
  // the variable database stores the name the name of our database
  $database = "blog_db";
 
- // database object based off of $host class
- $connection = new
+ // new database object that helps query on the database
+ $connection = new Database($host, $username, $password, $database);
 
 ?>
