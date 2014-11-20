@@ -1,4 +1,5 @@
 <?php
+	require_once(__DIR__ . "/Database.php");
 // variable stores the path for our blog project
 $path = "/strotze.blog/";
 
