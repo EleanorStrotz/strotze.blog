@@ -9,6 +9,8 @@
 		private $username;
 		private $password;
 		private $database;
+		// made a public variable because we want access to it in other folders
+		public $error;
 
 		// The constructor is called on an object after it has been created, and it is a good place to put initialisation code.
 		// the variables inside of the braces are global variables
@@ -68,7 +70,12 @@
 			// querys the connection you have above
 			//executes query in database
 			$query = $this->connection->query($string);
-
+			// if statement for error
+			if(!$query) {
+				$this->error = $this->connection->error;
+			}
+		
+		}
 			//closes connection
 			$this->closeConnection();
 			// returns the query variable if it is true or false
