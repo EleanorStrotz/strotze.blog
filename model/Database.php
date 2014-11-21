@@ -29,7 +29,7 @@
 			die("<p>Error: " . $connection->connect_error . "</p>");
 		}
 		// this line of code shows that there is a connection with the database
-		$exists = $connection->select_db($database);
+		$exists = $this->connection->select_db($database);
 
 		//creates the variable database for my admin
 		   if(!$exists){
@@ -74,8 +74,7 @@
 			if(!$query) {
 				$this->error = $this->connection->error;
 			}
-		
-		}
+	
 			//closes connection
 			$this->closeConnection();
 			// returns the query variable if it is true or false

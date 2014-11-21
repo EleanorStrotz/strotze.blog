@@ -11,12 +11,11 @@
   $date = new DateTime ('today');
 
   // variable query makes a query for the variables post and title
-	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post ='$post', DateTime = '$date'");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post ='$post'");
     // if statement checks if $query is running correctly
     if($query) {
     	// echo is used if $query is successfully working/ if it is true
     	echo "<p>Successfully inserted post: $title</p>";
-      echo "<p>$date->format('m/d/y')</p>";
        }
        // else statement outputs if there is an error 
        else {
