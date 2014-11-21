@@ -11,7 +11,7 @@
   $date = new DateTime ('today');
 
   // variable query makes a query for the variables post and title
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post ='$post', DateTime = '$date'");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post ='$post', DateTime = '$date'");
     // if statement checks if $query is running correctly
     if($query) {
     	// echo is used if $query is successfully working/ if it is true
@@ -20,7 +20,7 @@
        }
        // else statement outputs if there is an error 
        else {
-       	 echo"<p>$connection->error</p>";
+       	 echo"<p>" . $_SESSION["connection"]->error . "</p>";
        }
 ?>
 <!-- 2:14 -->
