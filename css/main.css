@@ -5,12 +5,14 @@ body{
 /*media query/ mobile responsive line of code for iphone 5*/
 @media (min-device-width: 320px) and (max-device-width: 480px){
 	body{
+		background-image: 100%;
 		background-color: blue;
 	}
 }
 /* media query/ mobile responsive line of code for ipad*/
 @media (min-device-width: 768px) and (max-device-width: 1024px){
 	body{
+		background-image: 100%;
 		background-color: yellow;
 	}
 }

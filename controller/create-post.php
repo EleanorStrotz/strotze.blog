@@ -16,10 +16,12 @@
     if($query) {
     	// echo is used if $query is successfully working/ if it is true
     	echo "<p>Successfully inserted post: $title</p>";
+      //echos date and time when you post a posts
+      echo date('l jS \of F Y h:i:s A');
        }
+
        // else statement outputs if there is an error 
        else {
        	 echo"<p>" . $_SESSION["connection"]->error . "</p>";
        }
 ?>
-<!-- 2:14 -->
