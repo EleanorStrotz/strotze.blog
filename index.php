@@ -9,3 +9,4 @@
  	require_once(__DIR__ . "/view/footer.php");
 ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
