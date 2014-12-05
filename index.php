@@ -8,7 +8,7 @@
  	// require_once links index.php with footer.php
  	require_once(__DIR__ . "/view/footer.php");
 ?>
-
+<!-- sticky header code -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <header>

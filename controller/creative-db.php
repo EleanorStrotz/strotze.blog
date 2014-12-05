@@ -10,6 +10,8 @@
 		. "title varchar(235) NOT NULL,"
 	//shows text
 	    . "post text NOT NULL,"
+	    // table for date time propertie
+	    . "DateTime datetime NOT NULL,"
 	    . "PRIMARY KEY (id) )");
 //outputs the $query saying if it is true or false
 	if($query){
