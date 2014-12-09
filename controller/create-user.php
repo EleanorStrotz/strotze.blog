@@ -10,5 +10,9 @@
 	//inputs password to database
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	// echos out email, username, password
-	echo $email . " - " . $username . " - " . $password;
+	// echos out password
+	echo $password;
+// salt variable used to disquise our password and not reveal what it really is
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
+// echos the line of code $salt
+	echo $salt; 
