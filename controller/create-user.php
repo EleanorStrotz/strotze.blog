@@ -10,9 +10,26 @@
 	//inputs password to database
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	// echos out password
-	echo $password;
+	
 // salt variable used to disquise our password and not reveal what it really is
 	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
-// echos the line of code $salt
-	echo $salt; 
+
+// hashedpassword variable 
+	$hashedPassword = crypt($password, $salt);
+
+//querys the database
+// query inserts into our table called users and inserts certian values
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+		. "email = '$email',"
+		. "username = '$username',"
+		. "password = '$hashedPassword',"
+		. "salt = '$salt'");
+	// if statement checks if the query function was successful or not
+	if ($query) {
+		echo "Successfully created user: $username";
+	}
+	//else statement echos if the query wasnt successful
+	else {
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
+ 
