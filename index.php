@@ -7,6 +7,8 @@
  	require_once(__DIR__ . "/controller/creative-db.php");
  	// require_once links index.php with footer.php
  	require_once(__DIR__ . "/view/footer.php");
+ 	// require_once links index.php with read-posts.php
+ 	require_once(__DIR__ . "/controller/read-posts.php");
 ?>
 <!-- sticky header code -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
