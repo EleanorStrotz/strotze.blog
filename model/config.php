@@ -3,6 +3,7 @@
 	// perseves information so that we dont have to create/generate that information, so that when we preserve it, it will be avaliable throughout our code
 	//starts our session variable
 	session_start();
+	session_regenerate_id(true);
 // variable stores the path for our blog project
 $path = "/strotze.blog/";
 

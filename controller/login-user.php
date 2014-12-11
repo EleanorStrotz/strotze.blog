@@ -15,6 +15,8 @@
 
    	 //checks if the login was successful
    	 if($row["password"] == crypt($password, $row["salt"])) {
+   	 	// tells website that the user has logged in
+   	 	$_SESSION["authenticated"] = true;
    	 	echo "<p>Login Successful</p>";
    	 }
    	 // else statement echos if the if statemt was incorrect
