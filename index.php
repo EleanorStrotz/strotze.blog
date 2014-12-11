@@ -4,7 +4,7 @@
     // require__once links index.php with header.php
 	require_once(__DIR__ . "/view/header.php");
 	// if statement makes sure that navigation only gets displayed on wheter the user has logged in or not
-	if(authenticateUser){
+	if(authenticateUser()){
 	/* Creates/links Database to navigation.php*/
 	require_once(__DIR__ . "/view/navigation.php");
     }
@@ -20,7 +20,9 @@
 
 <header>
 	<h1>Eleanor's Blog</h1>
-	<nav> <a href="">Home</a> <a href="">About</a> <a href="">Portfolio</a> <a href="">Services</a> <a href="">Contact</a> </nav>
+	<nav> <a href="login.php">Login</a> 
+	<a href="register.php">Register</a>
+	<a href="navigation.php">Create a Post</a></nav>
 </header>
 <main class="wrapper">
 </main>

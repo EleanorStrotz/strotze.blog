@@ -1,4 +1,4 @@
-<!--  -->
+
 <?php
 // require once links config.php to create-user.php
 	require_once(__DIR__ . "/../model/config.php");

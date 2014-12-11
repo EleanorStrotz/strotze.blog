@@ -22,10 +22,11 @@
 <!-- label for user to input their password; password appears as dots not text -->
 	<div>
 	  <label for="password">Password: </label>
-	  <input type="text" name="password" />	
+	  <input type="password" name="password" />	
 	</div>
 <!-- button to submit the info -->
 	<div>
 		<button type="submit" >Submit</button>
+</ul>
 	</div>
 </form>

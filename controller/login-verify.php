@@ -10,10 +10,11 @@
         }
         // else statement checks if the session variable has been set
         else {
-        	if($_SESSION["authenticated"] != true)
+        	if($_SESSION["authenticated"] != true){
         		return false;
-        }
+        	}
         else {
         	return true;
+        }
         }
 	}
