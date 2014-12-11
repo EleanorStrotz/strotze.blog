@@ -30,3 +30,4 @@
    }
 
 ?>
+<!-- contoller checks if the session variable has been set, also checks if its true -->
