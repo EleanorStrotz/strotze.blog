@@ -22,7 +22,7 @@
 	<h1>Eleanor's Blog</h1>
 	<nav> <a href="login.php">Login</a> 
 	<a href="register.php">Register</a>
-	<a href="navigation.php">Create a Post</a></nav>
+	<a href="post.php">Create a Post</a></nav>
 </header>
 <main class="wrapper">
 </main>
