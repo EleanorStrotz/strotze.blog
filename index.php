@@ -26,3 +26,7 @@
 </header>
 <main class="wrapper">
 </main>
+
+<!-- readmore code -->
+<a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content">
+<a class="read-more-hide hide" href="#">Read Less</a></span></p>

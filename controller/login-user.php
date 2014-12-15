@@ -1,6 +1,6 @@
 <?php
 	// require once links config.php file to login-user.php file
-   require_once(__DIR__ . "/..model/config.php");	
+   require_once(__DIR__ . "/../model/config.php");	
 
    // username and password variable help you login with authenication
    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
