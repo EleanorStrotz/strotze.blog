@@ -8,7 +8,7 @@
 <!-- method sends the info in form to our database;action creates the path to follow to get create user -->
 <!-- action creates a path to create-users -->
 <!-- Form created so user can register so they can be able to post, posts -->
-<form method="posts" action="<?php echo $path . "controller/login-user.php"?>">
+<form method="post" action="<?php echo $path . "controller/login-user.php"?>">
 	<!-- label for user to register there user name-->
 <div>
 	<label for="username">Username: </label>

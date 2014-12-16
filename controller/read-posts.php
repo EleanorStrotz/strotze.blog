@@ -14,8 +14,9 @@ if($result){
 		echo "<h2>" . $row['title'] . "</h2>";
 		echo "<p>" . $row['DateTime'] . "</p>";
 		echo "<br />";
-		echo "<p>" . $row['post'] . "</h1>";
+		echo "<p>" . $row['post'] . "</p>";
 		echo "<br/>";
+		echo "<p>" . $row['DateTime'] . "</p>";
 		echo "</div>";
 	}
 }
