@@ -11,7 +11,7 @@ $(function(){
 })
 
 // code for readmore
-$('.post').readmore({
+$('.posts').readmore({
   speed: 75,
   maxHeight: 500
 });
