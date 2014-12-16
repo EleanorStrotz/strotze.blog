@@ -14,18 +14,8 @@ body{
   height:60%;
   margin-left: 30px;
   margin-right: 30px;
-
-
-}
-/*readmore css*/
-p {
-  border-bottom: 1px solid black;
-  padding: 20px;
 }
 
-.hide {
-  display: none;
-}
 
 body {
   font-family: helvetica, arial, sans-serif;
