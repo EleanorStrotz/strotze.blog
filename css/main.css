@@ -134,6 +134,55 @@ body.sticky-header header h1 {
   color: black;
 }
 
+body {
+  margin: 2em auto;  
+}
+
+article {
+  margin: 0 auto;
+  max-width: 30em;
+}
+
+code {
+  background-color: AntiqueWhite;
+}
+
+.read-more {
+  background-color: Crimson;
+  border-radius: 5px;  
+  color: white;
+  display: block;
+  margin: 1.5em 0;
+  padding: .5em;
+  text-align: center;
+  text-decoration: none;  
+  width: 6em;
+}
+
+.no-context {
+  background-color: Crimson;
+}
+
+.with-context {
+  background-color: ForestGreen;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
 
 /*media query/ mobile responsive line of code for iphone 5*/
 @media (min-device-width: 320px) and (max-device-width: 480px){

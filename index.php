@@ -23,9 +23,10 @@
 	<nav> <a href="login.php">Login</a> 
 	<a href="register.php">Register</a>
 	<a href="post.php">Create a Post</a>
-	<a href="/controller/logout-user.php">Logout</a>
 	</nav>
 </header>
 <main class="wrapper">
 </main>
 
+<div id="more" class="readmore">
+ <a href="readmore.min.js" class="readmore">Read More</a>
