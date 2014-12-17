@@ -16,7 +16,6 @@ if($result){
 		echo "<br />";
 		echo "<p>" . $row['post'] . "</p>";
 		echo "<br/>";
-		echo "<p>" . $row['DateTime'] . "</p>";
 		echo "</div>";
 	}
 }

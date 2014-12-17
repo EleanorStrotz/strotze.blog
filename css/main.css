@@ -123,6 +123,17 @@ body.sticky-header header h1 {
 }
 
 
+/*styling for element with class readmore-js-toggle and readmore-js-section*/
+.readmore-js-toggle, .readmore-js-section {
+  display: block;
+  width: 100%;
+  color: black;
+}
+.readmore-js-section {
+  overflow: hidden;
+  color: black;
+}
+
 
 /*media query/ mobile responsive line of code for iphone 5*/
 @media (min-device-width: 320px) and (max-device-width: 480px){
