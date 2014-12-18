@@ -9,15 +9,16 @@ $result = $_SESSION["connection"]->query($query);
 
 //div 'posts' hold our posts on our index page
 if($result){
-	while ($row = mysqli_fetch_array($result)) {
-		echo "<div class='posts'";
+	while($row = mysqli_fetch_array($result)) {
+		echo "<div class = 'posts'>";
 		echo "<h2>" . $row['title'] . "</h2>";
 		echo "<p>" . $row['DateTime'] . "</p>";
 		echo "<br />";
+		echo "<section class ='post'>";
 		echo "<p>" . $row['post'] . "</p>";
+		echo "</section>";
 		echo "<br/>";
 		echo "</div>";
+		}
 	}
-}
-
 ?>

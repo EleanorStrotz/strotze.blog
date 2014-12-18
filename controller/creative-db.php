@@ -13,13 +13,6 @@
 	    // table for date time propertie
 	    . "DateTime datetime NOT NULL,"
 	    . "PRIMARY KEY (id) )");
-//outputs the $query saying if it is true or false
-	if($query){
-         echo "<p>Succesfully created table: posts</p>";
-		}
-		else {
-			echo "<p>" . $_SESSION["connection"]->error . "</p>";
-		}
 
 		// creates a database for the users
 		$query = $_SESSION["connection"]->query("CREATE TABLE users("
@@ -29,13 +22,3 @@
 			. "password char(128) NOT NULL,"
 			. "salt char(128) NOT NULL,"
 			. "PRIMARY KEY (id))");
-		// if/else statement checks if we properly created a database 
-		if ($query) {
-			echo "<p>Successfully created table: users</p>";
-		}
-		else{
-			echo "<p>" . $_SESSION["connection"]->error . "</p>";
-		}
-
-
- ?>

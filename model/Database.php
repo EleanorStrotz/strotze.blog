@@ -40,9 +40,7 @@
 		       echo "<p>Successfully created database: " . $database . "</p>";
 		   }
 		}
-		else {
-			echo "<p>Database already exists.</p>";
-		}
+		
 		}
 		// public function is used to open classes through an open connection
 		public function openConnection() {

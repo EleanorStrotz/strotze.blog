@@ -27,6 +27,5 @@
 <!-- button to submit the info -->
 	<div>
 		<button type="submit" class="btn btn-success">Submit</button>
-</ul>
 	</div>
 </form>
